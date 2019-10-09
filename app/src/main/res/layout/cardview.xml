@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum ="2">
+
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:orientation ="vertical">
+
+
+        <TextView
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/name"
+            android:textSize ="15sp"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id ="@+id/name"/>
+        <TextView
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/email"
+            android:textSize ="15sp"
+            android:textStyle = "bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id ="@+id/email"/>
+        <TextView
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Description"
+            android:textSize ="15sp"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id ="@+id/desc"/>
+        <TextView
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Location"
+            android:textSize ="15sp"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id ="@+id/location"/>
+
+        <Button
+            android:id="@+id/CheckDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1">
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
